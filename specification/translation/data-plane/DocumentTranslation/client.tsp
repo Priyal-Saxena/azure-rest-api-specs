@@ -354,3 +354,6 @@ interface SingleDocumentTranslationClient {
 );
 
 @@usage(DocumentTranslation.DocumentTranslateContent, Usage.json, "csharp");
+
+@@clientName(DocumentTranslation.SourceInput.sourceUrl, "sourceUri", "csharp");
+@@clientName(DocumentTranslation.TargetInput.targetUrl, "targetUri", "csharp");

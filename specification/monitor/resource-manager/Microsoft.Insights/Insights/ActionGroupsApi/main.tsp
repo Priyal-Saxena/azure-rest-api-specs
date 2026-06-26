@@ -15,6 +15,7 @@ import "./models.tsp";
 import "./back-compatible.tsp";
 import "./ActionGroupResource.tsp";
 import "../Common/main.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

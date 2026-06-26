@@ -40,3 +40,4 @@ namespace Customizations;
   "CreateOrUpdateApplied",
   "!autorest"
 );
+@@clientName(ApprovalWorkflow.callbackUrl, "callbackUri", "csharp");

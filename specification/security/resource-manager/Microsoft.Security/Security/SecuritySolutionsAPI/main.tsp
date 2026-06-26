@@ -21,6 +21,7 @@ import "./SecuritySolution.tsp";
 import "./ServerVulnerabilityAssessment.tsp";
 import "./TopologyResource.tsp";
 import "./routes.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

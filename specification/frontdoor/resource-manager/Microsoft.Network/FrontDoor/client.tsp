@@ -20,6 +20,7 @@ using TypeSpec.Rest;
   "FrontDoorWebApplicationFirewallPolicy",
   "csharp"
 );
+@@clientName(PolicySettings.redirectUrl, "redirectUri", "csharp");
 
 @@clientName(MinimumTLSVersion.`1.0`, "ONE0", "python");
 @@clientName(MinimumTLSVersion.`1.2`, "ONE2", "python");
@@ -582,5 +583,11 @@ namespace Azure.ResourceManager.Models {
 @@clientName(
   ManagedRuleSetsOperationGroup.list,
   "GetManagedRuleSets",
+  "csharp"
+);
+
+@@clientName(
+  Microsoft.Network.PolicySettings.redirectUrl,
+  "redirectUri",
   "csharp"
 );

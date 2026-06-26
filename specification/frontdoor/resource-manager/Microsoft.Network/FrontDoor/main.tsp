@@ -20,6 +20,7 @@ import "./RulesEngine.tsp";
 import "./Profile.tsp";
 import "./Experiment.tsp";
 import "./routes.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

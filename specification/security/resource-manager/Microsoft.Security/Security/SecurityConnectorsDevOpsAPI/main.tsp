@@ -21,6 +21,7 @@ import "./GitHubOwner.tsp";
 import "./GitHubRepository.tsp";
 import "./GitLabGroup.tsp";
 import "./GitLabProject.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

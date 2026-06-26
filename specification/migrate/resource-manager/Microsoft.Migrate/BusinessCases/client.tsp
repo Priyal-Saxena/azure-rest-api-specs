@@ -6,3 +6,8 @@ using Microsoft.Migrate;
 
 @@clientName(ErrorDetail, "AvsErrorDetail", "python");
 @@clientName(ErrorDetail, "AvsErrorDetail", "java");
+@@clientName(
+  ReportDownloadUrl.businessCaseReportUrl,
+  "businessCaseReportUri",
+  "csharp"
+);

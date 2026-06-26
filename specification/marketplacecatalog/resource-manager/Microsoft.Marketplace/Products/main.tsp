@@ -5,6 +5,7 @@ import "@azure-tools/typespec-azure-core";
 import "@azure-tools/typespec-azure-resource-manager";
 import "./product.tsp";
 import "./parameters.tsp";
+import "./client.tsp";
 
 using Http;
 using Rest;

@@ -160,11 +160,6 @@ interface DocumentIntelligenceAdministrationClient {
   "BlobFileListSource",
   "csharp"
 );
-@@clientName(
-  AnalyzeBatchDocumentsRequest.resultContainerUrl,
-  "ResultContainerUri",
-  "csharp"
-);
 @@clientName(AnalyzeBatchOperation, "AnalyzeBatchOperationDetails", "csharp");
 @@clientName(AnalyzeBatchOperation.createdDateTime, "CreatedOn", "csharp");
 @@clientName(
@@ -177,8 +172,6 @@ interface DocumentIntelligenceAdministrationClient {
   "AnalyzeBatchResultDetails",
   "csharp"
 );
-@@clientName(AnalyzeBatchOperationDetail.resultUrl, "ResultUri", "csharp");
-@@clientName(AnalyzeBatchOperationDetail.sourceUrl, "SourceUri", "csharp");
 @@clientName(AnalyzedDocument.docType, "DocumentType", "csharp");
 @@clientName(AnalyzeDocumentRequest, "AnalyzeDocumentOptions", "csharp");
 @@clientName(AnalyzeDocumentRequest.base64Source, "BytesSource", "csharp");
@@ -190,15 +183,9 @@ interface DocumentIntelligenceAdministrationClient {
 );
 @@clientName(AuthorizeCopyRequest, "AuthorizeModelCopyOptions", "csharp");
 @@clientName(AzureBlobContentSource, "BlobContentSource", "csharp");
-@@clientName(AzureBlobContentSource.containerUrl, "ContainerUri", "csharp");
 @@clientName(
   AzureBlobFileListContentSource,
   "BlobFileListContentSource",
-  "csharp"
-);
-@@clientName(
-  AzureBlobFileListContentSource.containerUrl,
-  "ContainerUri",
   "csharp"
 );
 @@clientName(
@@ -300,3 +287,29 @@ interface DocumentIntelligenceAdministrationClient {
 @@clientName(ClassifyDocumentRequest.base64Source, "bytesSource", "python");
 @@clientName(DocumentFieldSchema.items, "itemsSchema", "python");
 @@clientName(AnalyzeFromStreamRequestParams.input, "body", "python");
+
+@@clientName(
+  DocumentIntelligence.AnalyzeBatchDocumentsRequest.resultContainerUrl,
+  "resultContainerUri",
+  "csharp"
+);
+@@clientName(
+  DocumentIntelligence.AnalyzeBatchOperationDetail.sourceUrl,
+  "sourceUri",
+  "csharp"
+);
+@@clientName(
+  DocumentIntelligence.AnalyzeBatchOperationDetail.resultUrl,
+  "resultUri",
+  "csharp"
+);
+@@clientName(
+  DocumentIntelligence.AzureBlobContentSource.containerUrl,
+  "containerUri",
+  "csharp"
+);
+@@clientName(
+  DocumentIntelligence.AzureBlobFileListContentSource.containerUrl,
+  "containerUri",
+  "csharp"
+);

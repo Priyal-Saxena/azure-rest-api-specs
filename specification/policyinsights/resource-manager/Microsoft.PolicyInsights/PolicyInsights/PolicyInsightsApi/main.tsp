@@ -18,6 +18,7 @@ import "./Remediation.tsp";
 import "./PolicyMetadata.tsp";
 import "./Attestation.tsp";
 import "./routes.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

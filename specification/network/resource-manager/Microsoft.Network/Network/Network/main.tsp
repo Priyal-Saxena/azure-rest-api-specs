@@ -137,6 +137,7 @@ import "./VirtualNetworkAppliance.tsp";
 import "./ServiceGateway.tsp";
 import "./InterconnectGroup.tsp";
 import "../Common/main.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

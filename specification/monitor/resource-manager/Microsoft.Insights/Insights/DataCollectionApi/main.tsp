@@ -16,6 +16,7 @@ import "./back-compatible.tsp";
 import "./DataCollectionEndpointResource.tsp";
 import "./DataCollectionRuleAssociationProxyOnlyResource.tsp";
 import "./DataCollectionRuleResource.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

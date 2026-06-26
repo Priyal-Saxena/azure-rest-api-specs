@@ -704,3 +704,14 @@ using Microsoft.NetworkCloud;
   "VirtualMachineIpAllocationMethod",
   "java"
 );
+
+@@clientName(
+  Microsoft.NetworkCloud.CommandOutputSettings.containerUrl,
+  "containerUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.NetworkCloud.CommandOutputOverride.containerUrl,
+  "containerUri",
+  "csharp"
+);

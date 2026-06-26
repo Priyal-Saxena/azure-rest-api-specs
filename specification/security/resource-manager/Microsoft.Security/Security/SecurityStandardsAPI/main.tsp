@@ -16,6 +16,7 @@ import "./back-compatible.tsp";
 import "./SecurityStandard.tsp";
 import "./StandardAssignment.tsp";
 import "./CustomRecommendation.tsp";
+import "./client.tsp";
 
 using TypeSpec.Rest;
 using TypeSpec.Http;

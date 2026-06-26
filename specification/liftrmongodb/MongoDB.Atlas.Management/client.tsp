@@ -55,3 +55,8 @@ using MongoDB.Atlas;
   "csharp"
 );
 @@clientName(MongoDB.Atlas.ClusterTier, "MongoDBAtlasClusterTier", "csharp");
+@@clientName(
+  MongoDB.Atlas.PartnerProperties.redirectUrl,
+  "redirectUri",
+  "csharp"
+);

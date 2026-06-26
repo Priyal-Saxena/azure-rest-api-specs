@@ -1260,3 +1260,9 @@ namespace ConversationAuthoringProjectClient {
   },
   "python"
 );
+
+@@clientName(
+  Language.Conversations.Authoring.AnalyzeConversationAuthoringExportProjectJobState.resultUrl,
+  "resultUri",
+  "csharp"
+);

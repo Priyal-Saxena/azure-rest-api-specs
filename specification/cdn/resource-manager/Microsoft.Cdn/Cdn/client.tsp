@@ -31,6 +31,7 @@ using Azure.ResourceManager;
 @@clientName(CdnEndpoint, "EndpointResource", "java");
 
 @@clientName(ValidateProbeInput.probeURL, "probeUrl", "java");
+@@clientName(PolicySettingsAfd.redirectUrl, "redirectUri", "csharp");
 
 @@access(Certificate, Access.public, "java");
 @@usage(

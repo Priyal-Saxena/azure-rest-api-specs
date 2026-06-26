@@ -175,3 +175,9 @@ using PureStorage.Block;
 @@clientName(Versions.v1_preview, "V20241001Preview", "javascript");
 @@clientName(Versions.v2_preview, "V20241101Preview", "javascript");
 @@clientName(Versions.v1_stable, "V20241101", "javascript");
+
+@@clientName(
+  LiftrBase.SingleSignOnProperties.singleSignOnUrl,
+  "singleSignOnUri",
+  "csharp"
+);

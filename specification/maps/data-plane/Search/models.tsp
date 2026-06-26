@@ -1143,6 +1143,7 @@ model BoundaryProperties {
   /**
    * A URL that lists many of the data providers for Azure Maps and their related copyright information.
    */
+  #suppress "@azure-tools/typespec-client-generator-core/csharp-no-url-suffix" "Name kept for backward compatibility"
   copyrightUrl?: string;
 
   /**

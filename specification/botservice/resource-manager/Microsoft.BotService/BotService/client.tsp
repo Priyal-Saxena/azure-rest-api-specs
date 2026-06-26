@@ -526,3 +526,50 @@ namespace Customizations {
 
   @@override(Bots.update, BotsUpdate, "javascript");
 }
+
+@@clientName(Microsoft.BotService.BotProperties.iconUrl, "iconUri", "csharp");
+@@clientName(
+  Microsoft.BotService.BotProperties.manifestUrl,
+  "manifestUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.BotProperties.cmekKeyVaultUrl,
+  "cmekKeyVaultUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.ChannelSettings.botIconUrl,
+  "botIconUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.ServiceProviderProperties.iconUrl,
+  "iconUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.HostSettingsResponse.OAuthUrl,
+  "OAuthUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.HostSettingsResponse.ToBotFromChannelOpenIdMetadataUrl,
+  "ToBotFromChannelOpenIdMetadataUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.HostSettingsResponse.ToBotFromEmulatorOpenIdMetadataUrl,
+  "ToBotFromEmulatorOpenIdMetadataUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.HostSettingsResponse.ToChannelFromBotLoginUrl,
+  "ToChannelFromBotLoginUri",
+  "csharp"
+);
+@@clientName(
+  Microsoft.BotService.SlackChannelProperties.landingPageUrl,
+  "landingPageUri",
+  "csharp"
+);

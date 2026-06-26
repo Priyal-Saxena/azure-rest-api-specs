@@ -9,6 +9,7 @@ import "./common.tsp";
 import "./landingZoneAccountResourceProperties.tsp";
 import "./landingZoneConfigurationResourceProperties.tsp";
 import "./landingZoneRegistrationResourceProperties.tsp";
+import "./client.tsp";
 
 using TypeSpec.Http;
 using TypeSpec.Rest;
