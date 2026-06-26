@@ -42,10 +42,11 @@ parameters:
 
   - name: GitHubToken
     type: string
-    default: $(GH_TOKEN)
+    default: ''
 
 steps:
-  - template: /eng/common/pipelines/templates/steps/login-to-github.yml
+  - ${{ if eq(parameters.GitHubToken, '') }}:
+    - template: /eng/common/pipelines/templates/steps/login-to-github.yml
 
   - bash: |
       echo "Repository Name: ${{ parameters.RepositoryName }}"
@@ -63,4 +64,4 @@ steps:
     displayName: ${{ parameters.DisplayName }}
     condition: ${{ parameters.Condition }}
     env:
-      GH_TOKEN: ${{ parameters.GitHubToken }}
+      GH_TOKEN: $(GH_TOKEN)

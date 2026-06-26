@@ -178,7 +178,8 @@ stages:
             Write-Host "Will use commitish for SDK repo checkout: '$checkoutCommitish'"
           displayName: "Validate and update SDK repository commitish"
 
-      - template: /eng/common/pipelines/templates/steps/login-to-github.yml
+      - ${{ if and(eq(variables['System.TeamProject'], 'internal'), endsWith(variables['Build.Repository.Name'], '-pr')) }}:
+        - template: /eng/common/pipelines/templates/steps/login-to-github.yml
 
       - template: /eng/common/pipelines/templates/steps/sparse-checkout.yml
         parameters:
@@ -292,6 +293,8 @@ stages:
           CustomCondition: and(succeededOrFailed(), ne(variables['StagedArtifactsFolder'], ''))
 
       - ${{ if and(eq(variables['System.TeamProject'], 'internal'), eq(parameters.CreatePullRequest, true), ne(variables['Build.Reason'], 'PullRequest')) }}:
+        - template: /eng/common/pipelines/templates/steps/login-to-github.yml
+        
         - pwsh: |
             $sdkPrBranchName = "$(PrBranch)-$(Build.BuildId)"
             $sdkRepoBranch = '${{ parameters.SdkRepoBranch }}'
